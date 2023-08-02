@@ -3,8 +3,8 @@ import { CommonPageProps } from './types';
 import { Col, Row } from 'react-bootstrap';
 import { ContactCard } from 'src/components/ContactCard';
 import { FilterForm, FilterFormValues } from 'src/components/FilterForm';
-import { useAppDispatch, useAppSelector } from 'src/redux/hooks';
 import { filterActionCreator } from 'src/redux/actions';
+import { useAppDispatch, useAppSelector } from 'src/redux/hooks';
 
 export const ContactListPage = memo<CommonPageProps>(({ groupContactsState }): ReactElement => {
   const contacts = useAppSelector(state => state.filter);
